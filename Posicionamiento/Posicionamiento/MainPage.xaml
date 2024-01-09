@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Posicionamiento.MainPage">
+
+    <StackLayout>
+        <Frame Padding="24" CornerRadius="0">
+            <Label Text="ACTIVIDAD: CRITICOGRAFO" TextColor="Black" FontSize="18" HorizontalOptions="Center"/>
+        </Frame>
+        <Label Text="NOMBRE:" TextColor="Black" FontSize="18" Margin="20, 0, 0,0"/>
+        <Entry Margin="20, 0, 20,0" x:Name="Nombre" HorizontalOptions="FillAndExpand" />
+        <Label Text="GENERO:" Margin="20, 0, 0,0" FontSize="18" TextColor="Black"/>
+        <Grid>
+            <RadioButton Content="HOMBRE" x:Name="Hombre" Margin="20, 0, 0,0" TextColor="Black" FontSize="18" Grid.Column="0" Grid.Row="0"/>
+            <RadioButton Content="MUJER" x:Name="Mujer" Margin="20, 0, 0,0" TextColor="Black" FontSize="18" Grid.Column="1" Grid.Row="0"/>
+        </Grid>
+        <Grid>
+            <CheckBox Grid.Column="0" Grid.Row="1" IsChecked="False" Color="CadetBlue" Margin="20, 0, 0,0" x:Name="ALTO"/>
+            <Label Text="ALTO" FontSize="18" TextColor="Black" Grid.Column="1" Margin="-10, 12, 0, 0" Grid.Row="1"/>
+            <CheckBox Grid.Column="3" Grid.Row="1" IsChecked="False" Color="CadetBlue" x:Name="FEO" Margin="-80, 0, 0, 0"/>
+            <Label Text="FEO" FontSize="18" TextColor="Black" Grid.Column="4" Grid.Row="1" Margin="-90, 12, 0, 0"/>
+            <CheckBox Grid.Column="0" Grid.Row="2" IsChecked="False" Color="CadetBlue" Margin="20, 0, 0,0" x:Name="LISTO"/>
+            <Label Text="LISTO" FontSize="18" TextColor="Black" Grid.Column="1" Margin="-10, 12, 0, 0" Grid.Row="2"/>
+            <CheckBox Grid.Column="3" Grid.Row="2" IsChecked="False" Color="CadetBlue" x:Name="EXTRAVAGANTE" Margin="-80, 0, 0, 0"/>
+            <Label Text="EXTRAVAGANTE" FontSize="18" TextColor="Black" Grid.Column="4" Grid.Row="2" Margin="-90, 12, 0, 0"/>
+            <CheckBox Grid.Column="0" Grid.Row="3" IsChecked="False" Margin="20, 0, 0,0" Color="CadetBlue" x:Name="RARO"/>
+            <Label Text="RARO" FontSize="18" TextColor="Black" Grid.Column="1" Margin="-10, 12, 0, 0" Grid.Row="3"/>
+            <CheckBox Grid.Column="3" Grid.Row="3" IsChecked="False" x:Name="GRANDE" Margin="-80, 0, 0, 0" Color="CadetBlue"/>
+            <Label Text="GRANDE" FontSize="18" TextColor="Black" Grid.Column="4" Grid.Row="3" Margin="-90, 12, 0, 0"/>
+            <Button Text="CRITICAR" FontSize="Large" Margin="20, 0, 20, 0" BorderColor="Black" BorderWidth="2"  TextColor="Black" Font="Bold" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <Entry HorizontalOptions="FillAndExpand" x:Name="Resultado" Margin="20, 0, 20, 0" Grid.Row="6" Grid.ColumnSpan="5" IsEnabled="False"/>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
