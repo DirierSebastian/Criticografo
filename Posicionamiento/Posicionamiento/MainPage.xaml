@@ -27,8 +27,8 @@
             <Label Text="RARO" FontSize="18" TextColor="Black" Grid.Column="1" Margin="-10, 12, 0, 0" Grid.Row="3"/>
             <CheckBox Grid.Column="3" Grid.Row="3" IsChecked="False" x:Name="GRANDE" Margin="-80, 0, 0, 0" Color="CadetBlue"/>
             <Label Text="GRANDE" FontSize="18" TextColor="Black" Grid.Column="4" Grid.Row="3" Margin="-90, 12, 0, 0"/>
-            <Button Text="CRITICAR" FontSize="Large" Margin="20, 0, 20, 0" BorderColor="Black" BorderWidth="2"  TextColor="Black" Font="Bold" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.ColumnSpan="5"/>
-            <Entry HorizontalOptions="FillAndExpand" x:Name="Resultado" Margin="20, 0, 20, 0" Grid.Row="6" Grid.ColumnSpan="5" IsEnabled="False"/>
+            <Button Text="CRITICAR" Clicked="Button_Clicked" FontSize="Large" Margin="20, 0, 20, 0" BorderColor="Black" BorderWidth="2"  TextColor="Black" Font="Bold" HorizontalOptions="FillAndExpand" Grid.Row="4" Grid.ColumnSpan="5"/>
+            <Label FontSize="18" TextColor="Black" HorizontalOptions="FillAndExpand" x:Name="Resultado" Margin="20, 0, 20, 0" Grid.Row="6" Grid.ColumnSpan="5"/>
         </Grid>
 
     </StackLayout>
